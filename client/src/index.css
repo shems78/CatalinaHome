@@ -73,10 +73,8 @@
 @layer components {
   .gradient-text {
     background: linear-gradient(90deg, #facc15, #f472b6, #60a5fa);
-    background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient-animation 8s linear infinite;
   }
 
   .nav-link {
