@@ -32,7 +32,7 @@ export function Footer() {
             {t.footer.copyright}
           </p>
           <p className="text-slate-400">
-            contact@catalinahome.net | +216 XX XXX XXX
+            contact@catalinahome.net | +216 23 552 210
           </p>
         </div>
       </div>

@@ -208,7 +208,7 @@ export function Contact() {
               <h4 className="font-bold text-white mb-2">
                 {t.language === 'fr' ? 'Téléphone' : 'Phone'}
               </h4>
-              <p className="text-slate-400">+216 XX XXX XXX</p>
+              <p className="text-slate-400">+216 23 552 210</p>
             </div>
           </div>
         </div>
