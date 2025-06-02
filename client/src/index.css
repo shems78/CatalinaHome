@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --background: 222 84% 5%; /* #0f172a */
+  --foreground: 210 20% 91%; /* #e2e8f0 */
+  --muted: 217 33% 17%; /* #1e293b */
+  --muted-foreground: 215 16% 57%; /* #94a3b8 */
+  --popover: 222 84% 5%; /* #0f172a */
+  --popover-foreground: 210 20% 91%; /* #e2e8f0 */
+  --card: 217 33% 17%; /* #1e293b */
+  --card-foreground: 210 20% 91%; /* #e2e8f0 */
+  --border: 217 33% 17%; /* #1e293b */
+  --input: 217 33% 17%; /* #1e293b */
+  --primary: 258 90% 66%; /* #7c3aed */
+  --primary-foreground: 0 0% 100%; /* white */
+  --secondary: 217 91% 60%; /* #3b82f6 */
+  --secondary-foreground: 0 0% 100%; /* white */
+  --accent: 330 81% 60%; /* #f472b6 */
+  --accent-foreground: 0 0% 100%; /* white */
+  --destructive: 0 84% 60%; /* #ef4444 */
+  --destructive-foreground: 0 0% 100%; /* white */
+  --ring: 258 90% 66%; /* #7c3aed */
+  --radius: 0.5rem;
+  --chart-1: 258 90% 66%; /* #7c3aed */
+  --chart-2: 217 91% 60%; /* #3b82f6 */
+  --chart-3: 330 81% 60%; /* #f472b6 */
+  --chart-4: 38 92% 50%; /* #f59e0b */
+  --chart-5: 48 96% 53%; /* #facc15 */
+}
+
+.dark {
+  --background: 222 84% 5%; /* #0f172a */
+  --foreground: 210 20% 91%; /* #e2e8f0 */
+  --muted: 217 33% 17%; /* #1e293b */
+  --muted-foreground: 215 16% 57%; /* #94a3b8 */
+  --popover: 222 84% 5%; /* #0f172a */
+  --popover-foreground: 210 20% 91%; /* #e2e8f0 */
+  --card: 217 33% 17%; /* #1e293b */
+  --card-foreground: 210 20% 91%; /* #e2e8f0 */
+  --border: 217 33% 17%; /* #1e293b */
+  --input: 217 33% 17%; /* #1e293b */
+  --primary: 258 90% 66%; /* #7c3aed */
+  --primary-foreground: 0 0% 100%; /* white */
+  --secondary: 217 91% 60%; /* #3b82f6 */
+  --secondary-foreground: 0 0% 100%; /* white */
+  --accent: 330 81% 60%; /* #f472b6 */
+  --accent-foreground: 0 0% 100%; /* white */
+  --destructive: 0 84% 60%; /* #ef4444 */
+  --destructive-foreground: 0 0% 100%; /* white */
+  --ring: 258 90% 66%; /* #7c3aed */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: linear-gradient(90deg, #facc15, #f472b6, #60a5fa);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 8s linear infinite;
+  }
+
+  .nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #facc15;
+    bottom: -5px;
+    left: 0;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+    box-shadow: 0 2px 10px #facc15;
+  }
+
+  .hero-background {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b0764 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+    background-size: 100px 100px;
+    opacity: 0.5;
+  }
+
+  .card-hover {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-10px) scale(1.02);
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #f472b6, #f59e0b);
+    border-radius: 2px;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    animation: gradient-animation 8s linear infinite;
+  }
+
+  .animate-slide-in {
+    animation: slide-in 0.5s ease-out;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
