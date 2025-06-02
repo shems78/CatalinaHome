@@ -82,18 +82,32 @@ export function Contact() {
     setIsSubmitting(true);
     
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Show success message
-      toast({
-        title: t.contact.success,
-        description: '',
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/movdgono', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
       });
-      
-      // Reset form
-      setFormData({ name: '', email: '', message: '' });
-      setErrors({ name: '', email: '', message: '' });
+
+      if (response.ok) {
+        // Show success message
+        toast({
+          title: t.contact.success,
+          description: '',
+        });
+        
+        // Reset form
+        setFormData({ name: '', email: '', message: '' });
+        setErrors({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Form submission failed');
+      }
       
     } catch (error) {
       toast({
@@ -197,7 +211,7 @@ export function Contact() {
               <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-envelope text-white text-xl"></i>
               </div>
-              <h4 className="font-bold text-white mb-2">Email</h4>
+              <h4 className="font-bold text-white mb-2">{t.contact.info.email}</h4>
               <p className="text-slate-400">contact@catalinahome.net</p>
             </div>
 
@@ -205,9 +219,7 @@ export function Contact() {
               <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-phone text-white text-xl"></i>
               </div>
-              <h4 className="font-bold text-white mb-2">
-                Téléphone / Phone
-              </h4>
+              <h4 className="font-bold text-white mb-2">{t.contact.info.phone}</h4>
               <p className="text-slate-400">+216 23 552 210</p>
               <p className="text-slate-400">+216 22 135 511</p>
             </div>
@@ -216,11 +228,8 @@ export function Contact() {
               <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-map-marker-alt text-white text-xl"></i>
               </div>
-              <h4 className="font-bold text-white mb-2">
-                Adresse / Address
-              </h4>
-              <p className="text-slate-400">Appt 3, Route Lafrane Km4</p>
-              <p className="text-slate-400">Sfax, Tunisie</p>
+              <h4 className="font-bold text-white mb-2">{t.contact.info.address}</h4>
+              <p className="text-slate-400">{t.contact.info.location}</p>
             </div>
           </div>
         </div>

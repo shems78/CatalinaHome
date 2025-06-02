@@ -70,6 +70,12 @@ export interface Translations {
     emailRequired: string;
     emailInvalid: string;
     messageRequired: string;
+    info: {
+      email: string;
+      phone: string;
+      address: string;
+      location: string;
+    };
   };
   footer: {
     copyright: string;
@@ -255,6 +261,12 @@ export const translations: Record<Language, Translations> = {
       emailRequired: 'Veuillez saisir votre email',
       emailInvalid: 'Veuillez saisir un email valide',
       messageRequired: 'Veuillez saisir votre message',
+      info: {
+        email: 'Email',
+        phone: 'Téléphone',
+        address: 'Adresse',
+        location: 'Appt 3, Route Lafrane Km4, Sfax, Tunisie'
+      }
     },
     footer: {
       copyright: 'Catalina Home © 2020 - Tous droits réservés',
@@ -486,6 +498,12 @@ export const translations: Record<Language, Translations> = {
       emailRequired: 'Please enter your email',
       emailInvalid: 'Please enter a valid email',
       messageRequired: 'Please enter your message',
+      info: {
+        email: 'Email',
+        phone: 'Phone',
+        address: 'Address',
+        location: 'Appt 3, Route Lafrane Km4, Sfax, Tunisia'
+      }
     },
     footer: {
       copyright: 'Catalina Home © 2020 - All rights reserved',
