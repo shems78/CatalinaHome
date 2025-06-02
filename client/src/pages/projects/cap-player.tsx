@@ -93,10 +93,16 @@ export default function CapPlayer() {
               Développement d'une plateforme de streaming moderne et performante avec plus de 75 000 utilisateurs actifs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://capplayer.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://play.google.com/store/apps/details?id=com.cap.capplayer" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-                  Visiter Cap Player
+                  <i className="fab fa-google-play mr-2"></i>
+                  Télécharger sur Play Store
                   <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+              <a href="https://capplayer.com/" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white">
+                  Visiter le site web
                 </Button>
               </a>
             </div>
@@ -357,9 +363,10 @@ export default function CapPlayer() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <a href="https://capplayer.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://play.google.com/store/apps/details?id=com.cap.capplayer" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Découvrir Cap Player
+                <i className="fab fa-google-play mr-2"></i>
+                Télécharger sur Play Store
               </Button>
             </a>
           </div>
