@@ -257,7 +257,7 @@ export const translations: Record<Language, Translations> = {
       messageRequired: 'Veuillez saisir votre message',
     },
     footer: {
-      copyright: 'Catalina Home © 2025 - Tous droits réservés',
+      copyright: 'Catalina Home © 2020 - Tous droits réservés',
     },
     quote: {
       title: 'Demander un devis',
@@ -488,7 +488,7 @@ export const translations: Record<Language, Translations> = {
       messageRequired: 'Please enter your message',
     },
     footer: {
-      copyright: 'Catalina Home © 2025 - All rights reserved',
+      copyright: 'Catalina Home © 2020 - All rights reserved',
     },
     quote: {
       title: 'Request a Quote',
