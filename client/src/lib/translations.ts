@@ -74,6 +74,60 @@ export interface Translations {
   footer: {
     copyright: string;
   };
+  quote: {
+    title: string;
+    subtitle: string;
+    personalInfo: string;
+    name: string;
+    email: string;
+    phone: string;
+    company: string;
+    projectDetails: string;
+    projectType: string;
+    budget: string;
+    timeline: string;
+    description: string;
+    features: string;
+    submit: string;
+    submitting: string;
+    success: string;
+    error: string;
+    nameRequired: string;
+    emailRequired: string;
+    emailInvalid: string;
+    projectTypeRequired: string;
+    descriptionRequired: string;
+    projectTypes: {
+      website: string;
+      ecommerce: string;
+      mobileApp: string;
+      desktopApp: string;
+      consulting: string;
+      maintenance: string;
+      other: string;
+    };
+    budgetRanges: {
+      small: string;
+      medium: string;
+      large: string;
+      enterprise: string;
+    };
+    timelineOptions: {
+      urgent: string;
+      normal: string;
+      flexible: string;
+    };
+    featureOptions: {
+      responsive: string;
+      cms: string;
+      ecommerce: string;
+      multilingual: string;
+      seo: string;
+      analytics: string;
+      hosting: string;
+      maintenance: string;
+    };
+  };
 }
 
 export const translations: Record<Language, Translations> = {
@@ -151,6 +205,60 @@ export const translations: Record<Language, Translations> = {
     footer: {
       copyright: 'Catalina Home © 2025 - Tous droits réservés',
     },
+    quote: {
+      title: 'Demander un devis',
+      subtitle: 'Décrivez votre projet et recevez une estimation personnalisée',
+      personalInfo: 'Informations personnelles',
+      name: 'Nom complet',
+      email: 'Email',
+      phone: 'Téléphone',
+      company: 'Entreprise',
+      projectDetails: 'Détails du projet',
+      projectType: 'Type de projet',
+      budget: 'Budget estimé',
+      timeline: 'Délai souhaité',
+      description: 'Description du projet',
+      features: 'Fonctionnalités souhaitées',
+      submit: 'Demander un devis',
+      submitting: 'Envoi en cours...',
+      success: 'Demande de devis envoyée avec succès !',
+      error: 'Une erreur s\'est produite. Veuillez réessayer.',
+      nameRequired: 'Veuillez entrer votre nom',
+      emailRequired: 'Veuillez entrer votre email',
+      emailInvalid: 'Veuillez entrer un email valide',
+      projectTypeRequired: 'Veuillez sélectionner un type de projet',
+      descriptionRequired: 'Veuillez décrire votre projet',
+      projectTypes: {
+        website: 'Site web vitrine',
+        ecommerce: 'Site e-commerce',
+        mobileApp: 'Application mobile',
+        desktopApp: 'Application desktop',
+        consulting: 'Conseil IT',
+        maintenance: 'Maintenance',
+        other: 'Autre',
+      },
+      budgetRanges: {
+        small: '1 000 - 5 000 €',
+        medium: '5 000 - 15 000 €',
+        large: '15 000 - 50 000 €',
+        enterprise: '50 000 € +',
+      },
+      timelineOptions: {
+        urgent: 'Urgent (moins de 1 mois)',
+        normal: 'Normal (1-3 mois)',
+        flexible: 'Flexible (plus de 3 mois)',
+      },
+      featureOptions: {
+        responsive: 'Design responsive',
+        cms: 'Système de gestion de contenu',
+        ecommerce: 'Boutique en ligne',
+        multilingual: 'Multilingue',
+        seo: 'Optimisation SEO',
+        analytics: 'Analytics',
+        hosting: 'Hébergement',
+        maintenance: 'Maintenance',
+      },
+    },
   },
   en: {
     header: {
@@ -225,6 +333,60 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       copyright: 'Catalina Home © 2025 - All rights reserved',
+    },
+    quote: {
+      title: 'Request a Quote',
+      subtitle: 'Describe your project and receive a personalized estimate',
+      personalInfo: 'Personal Information',
+      name: 'Full Name',
+      email: 'Email',
+      phone: 'Phone',
+      company: 'Company',
+      projectDetails: 'Project Details',
+      projectType: 'Project Type',
+      budget: 'Estimated Budget',
+      timeline: 'Desired Timeline',
+      description: 'Project Description',
+      features: 'Desired Features',
+      submit: 'Request Quote',
+      submitting: 'Submitting...',
+      success: 'Quote request sent successfully!',
+      error: 'An error occurred. Please try again.',
+      nameRequired: 'Please enter your name',
+      emailRequired: 'Please enter your email',
+      emailInvalid: 'Please enter a valid email',
+      projectTypeRequired: 'Please select a project type',
+      descriptionRequired: 'Please describe your project',
+      projectTypes: {
+        website: 'Showcase Website',
+        ecommerce: 'E-commerce Site',
+        mobileApp: 'Mobile Application',
+        desktopApp: 'Desktop Application',
+        consulting: 'IT Consulting',
+        maintenance: 'Maintenance',
+        other: 'Other',
+      },
+      budgetRanges: {
+        small: '$1,000 - $5,000',
+        medium: '$5,000 - $15,000',
+        large: '$15,000 - $50,000',
+        enterprise: '$50,000+',
+      },
+      timelineOptions: {
+        urgent: 'Urgent (less than 1 month)',
+        normal: 'Normal (1-3 months)',
+        flexible: 'Flexible (more than 3 months)',
+      },
+      featureOptions: {
+        responsive: 'Responsive Design',
+        cms: 'Content Management System',
+        ecommerce: 'Online Store',
+        multilingual: 'Multilingual',
+        seo: 'SEO Optimization',
+        analytics: 'Analytics',
+        hosting: 'Hosting',
+        maintenance: 'Maintenance',
+      },
     },
   },
 };
