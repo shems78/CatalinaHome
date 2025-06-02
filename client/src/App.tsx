@@ -11,6 +11,8 @@ import WebDevelopment from "@/pages/services/web-development";
 import BusinessApps from "@/pages/services/business-apps";
 import Maintenance from "@/pages/services/maintenance";
 import Consulting from "@/pages/services/consulting";
+import ERPSystem from "@/pages/projects/erp-system";
+import ShowcaseWebsite from "@/pages/projects/showcase-website";
 
 function Router() {
   return (
@@ -23,6 +25,8 @@ function Router() {
       <Route path="/services/business-apps" component={BusinessApps} />
       <Route path="/services/maintenance" component={Maintenance} />
       <Route path="/services/consulting" component={Consulting} />
+      <Route path="/projects/erp-system" component={ERPSystem} />
+      <Route path="/projects/showcase-website" component={ShowcaseWebsite} />
       <Route component={NotFound} />
     </Switch>
   );
