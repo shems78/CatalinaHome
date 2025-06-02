@@ -7,6 +7,10 @@ import { LanguageProvider } from "@/hooks/use-language";
 import Home from "@/pages/home";
 import Quote from "@/pages/quote";
 import NotFound from "@/pages/not-found";
+import WebDevelopment from "@/pages/services/web-development";
+import BusinessApps from "@/pages/services/business-apps";
+import Maintenance from "@/pages/services/maintenance";
+import Consulting from "@/pages/services/consulting";
 
 function Router() {
   return (
@@ -15,6 +19,10 @@ function Router() {
       <Route path="/fr" component={Home} />
       <Route path="/en" component={Home} />
       <Route path="/quote" component={Quote} />
+      <Route path="/services/web-development" component={WebDevelopment} />
+      <Route path="/services/business-apps" component={BusinessApps} />
+      <Route path="/services/maintenance" component={Maintenance} />
+      <Route path="/services/consulting" component={Consulting} />
       <Route component={NotFound} />
     </Switch>
   );
