@@ -27,14 +27,14 @@ export function Projects() {
       result: '320% augmentation trafic'
     },
     {
-      icon: 'fas fa-chart-line',
-      title: t.projects.analytics.title,
-      description: t.projects.analytics.description,
+      icon: 'fas fa-mobile-alt',
+      title: 'Shems Player - App IPTV',
+      description: 'Application mobile IPTV moderne avec streaming HD et interface intuitive',
       gradient: 'from-green-400 to-teal-400',
-      tags: ['Angular', 'Chart.js', 'MongoDB'],
-      link: '/projects/analytics-dashboard',
-      client: 'RetailTech Solutions',
-      result: '60% amélioration décisions'
+      tags: ['Android', 'Kotlin', 'ExoPlayer'],
+      link: '/projects/shems-player',
+      client: 'Shems Entertainment',
+      result: '50K+ téléchargements'
     },
     {
       icon: 'fas fa-shield-alt',
