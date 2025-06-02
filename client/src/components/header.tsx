@@ -19,7 +19,7 @@ export function Header() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex flex-col items-center gap-1">
           <i className="fas fa-house-laptop text-yellow-400 text-2xl drop-shadow-lg"></i>
-          <span className="text-xl font-bold gradient-text animate-gradient">
+          <span className="text-xl font-bold gradient-text">
             CatalinaHome
           </span>
         </div>

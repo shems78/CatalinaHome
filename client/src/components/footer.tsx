@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-4 mb-8">
           <div className="flex flex-col items-center gap-2">
             <i className="fas fa-house-laptop text-yellow-400 text-3xl drop-shadow-lg"></i>
-            <span className="text-2xl font-bold gradient-text animate-gradient">
+            <span className="text-2xl font-bold gradient-text">
               CatalinaHome
             </span>
           </div>
