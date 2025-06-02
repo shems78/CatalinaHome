@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight, Shield, Clock, AlertTriangle, Eye, Phone, Wrench, CheckCircle } from 'lucide-react';
 import { Link } from 'wouter';
+import { Header } from '@/components/header';
 
 export default function Maintenance() {
   const { t } = useLanguage();
@@ -87,6 +88,7 @@ export default function Maintenance() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 dark:from-purple-900/20 dark:via-blue-900/20 dark:to-indigo-900/20">
+      <Header />
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
