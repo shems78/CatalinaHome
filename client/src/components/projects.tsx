@@ -37,14 +37,14 @@ export function Projects() {
       result: '50K+ téléchargements'
     },
     {
-      icon: 'fas fa-shield-alt',
-      title: t.projects.security.title,
-      description: t.projects.security.description,
+      icon: 'fas fa-play-circle',
+      title: 'Cap Player - Plateforme Streaming',
+      description: 'Plateforme de streaming web moderne avec architecture scalable et interface responsive',
       gradient: 'from-orange-400 to-yellow-400',
-      tags: ['Security', 'Audit', 'Compliance'],
-      link: '/projects/security-audit',
-      client: 'FinanceSecure SA',
-      result: '100% conformité RGPD'
+      tags: ['React', 'Node.js', 'HLS'],
+      link: '/projects/cap-player',
+      client: 'Cap Entertainment',
+      result: '75K+ utilisateurs actifs'
     },
   ];
 

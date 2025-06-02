@@ -14,6 +14,7 @@ import Consulting from "@/pages/services/consulting";
 import ERPSystem from "@/pages/projects/erp-system";
 import ShowcaseWebsite from "@/pages/projects/showcase-website";
 import ShemsPlayer from "@/pages/projects/shems-player";
+import CapPlayer from "@/pages/projects/cap-player";
 
 function Router() {
   return (
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/projects/erp-system" component={ERPSystem} />
       <Route path="/projects/showcase-website" component={ShowcaseWebsite} />
       <Route path="/projects/shems-player" component={ShemsPlayer} />
+      <Route path="/projects/cap-player" component={CapPlayer} />
       <Route component={NotFound} />
     </Switch>
   );
