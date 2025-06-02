@@ -93,7 +93,7 @@ export default function GoldenSpoon() {
               Développement d'une plateforme e-commerce pour producteur d'huile d'olive tunisienne avec expansion internationale
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://goldenspoon-oliveoil.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.goldenspoonoliveoil.ca/" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-gradient-to-r from-green-600 to-yellow-600 hover:from-green-700 hover:to-yellow-700">
                   <i className="fas fa-globe mr-2"></i>
                   Visiter le site web
@@ -383,7 +383,7 @@ export default function GoldenSpoon() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <a href="https://goldenspoon-oliveoil.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.goldenspoonoliveoil.ca/" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <i className="fas fa-globe mr-2"></i>
                 Visiter Golden Spoon
