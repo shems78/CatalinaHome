@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalina Home - IT Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background: #0f172a;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+
+        /* Vibrant Header */
+        header {
+            background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 30px rgba(123, 92, 255, 0.3);
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            font-size: 1.8em;
+            font-weight: bold;
+            background: linear-gradient(90deg, #facc15, #f472b6, #60a5fa);
+            background-size: 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animateText 8s linear infinite;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .logo i {
+            color: #facc15;
+            filter: drop-shadow(0 2px 5px rgba(250, 204, 21, 0.5));
+            font-size: 1.8em; /* Larger icon size */
+        }
+
+        @keyframes animateText {
+            0% { background-position: 0% }
+            100% { background-position: 300% }
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fefce8;
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            font-size: 1.1em;
+            padding: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0%; height: 3px;
+            background: #facc15;
+            bottom: -5px; left: 0;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            box-shadow: 0 2px 10px #facc15;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b0764 100%);
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+            background-size: 100px 100px;
+            opacity: 0.5;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero button {
+            background: linear-gradient(45deg, #f472b6, #f59e0b);
+            color: white;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 114, 182, 0.4);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(245, 114, 182, 0.6);
+        }
+
+        .hero button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #f59e0b, #f472b6);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .hero button:hover::before {
+            opacity: 1;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: white;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #f472b6, #f59e0b);
+            border-radius: 2px;
+        }
+
+        /* Services Section - 4 divs in same line */
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services .card {
+            flex: 1;
+            min-width: 250px;
+            max-width: 280px;
+        }
+
+        /* Card Styling */
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(123, 92, 255, 0.3);
+            border-color: rgba(124, 58, 237, 0.5);
+        }
+
+        .card i {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card strong {
+            display: block;
+            margin: 15px 0;
+            font-size: 1.3em;
+            color: white;
+        }
+
+        .card p {
+            color: #94a3b8;
+        }
+
+        /* Section Backgrounds */
+        #services {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+        }
+
+        #projects {
+            background: linear-gradient(135deg, #0f172a 0%, #1a365d 100%);
+        }
+
+        #about {
+            background: linear-gradient(135deg, #0f172a 0%, #312e81 100%);
+        }
+
+        #contact {
+            background: linear-gradient(135deg, #0f172a 0%, #4c1d95 100%);
+        }
+
+        /* Form Styling */
+        form {
+            max-width: 600px;
+            margin: 40px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input, textarea {
+            padding: 15px;
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #8b5cf6;
+            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.3);
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #94a3b8;
+        }
+
+        form button {
+            background: linear-gradient(45deg, #8b5cf6, #3b82f6);
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        form button:hover {
+            background: linear-gradient(45deg, #7c3aed, #2563eb);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b0764 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer small {
+            opacity: 0.8;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .services {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fas fa-house-laptop"></i>
+            CatalinaHome
+        </div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#projects">Projets</a>
+            <a href="#about">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Solutions informatiques modernes pour entreprises</h1>
+        <button>Obtenir un devis</button>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Nos Services</h2>
+        <div class="services">
+            <div class="card"><i class="fas fa-laptop-code"></i><strong>Création de sites web</strong><p>Sites vitrines, e-commerce, responsives</p></div>
+            <div class="card"><i class="fas fa-mobile-alt"></i><strong>Applications métiers</strong><p>Solutions mobiles et desktop adaptées</p></div>
+            <div class="card"><i class="fas fa-tools"></i><strong>Maintenance</strong><p>Assistance technique et corrective</p></div>
+            <div class="card"><i class="fas fa-lightbulb"></i><strong>Conseil IT</strong><p>Accompagnement dans votre transformation digitale</p></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Nos Réalisations</h2>
+        <div class="projects">
+            <div class="card"><i class="fas fa-briefcase"></i><strong>ERP ABC</strong><p>Déploiement d'un ERP pour une PME industrielle</p></div>
+            <div class="card"><i class="fas fa-store"></i><strong>Site Vitrine DEF</strong><p>Refonte pour une boutique locale artisanale</p></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">À propos</h2>
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <i class="fas fa-users"></i>
+            <p><strong>Qui sommes-nous ?</strong><br>Une équipe passionnée d'experts IT en Tunisie. Nous aidons les entreprises à se développer grâce à des solutions technologiques performantes.</p>
+            <p style="margin-top: 20px;"><strong>Nos valeurs :</strong> Innovation – Fiabilité – Proximité</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contactez-nous</h2>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" rows="5" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Catalina Home © 2025 - Tous droits réservés</p>
+        <small>contact@catalinahome.net | +216 XX XXX XXX</small>
+    </footer>
+
+</body>
+</html>
