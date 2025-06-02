@@ -10,56 +10,56 @@ export default function GoldenSpoon() {
   const { t } = useLanguage();
 
   const projectDetails = {
-    client: "Golden Spoon Restaurant",
-    industry: "Restauration & Gastronomie",
-    duration: "4 mois",
-    teamSize: "5 développeurs",
-    budget: "€28,000",
-    location: "Tunis, Tunisie"
+    client: "Golden Spoon Olive Oil",
+    industry: "Agriculture & Exportation",
+    duration: "5 mois",
+    teamSize: "4 développeurs",
+    budget: "€32,000",
+    location: "Sfax, Tunisie"
   };
 
   const challenges = [
-    "Création d'une présence en ligne pour un restaurant établi",
-    "Système de commande en ligne et réservation",
-    "Mise en valeur de l'art culinaire et de l'ambiance",
-    "Intégration avec les systèmes de livraison",
-    "Optimisation pour les recherches locales"
+    "Création d'une présence digitale pour l'exportation",
+    "Système de vente en ligne B2B et B2C",
+    "Mise en valeur de la qualité et origine des olives",
+    "Gestion multilingue pour les marchés internationaux",
+    "Optimisation pour l'export et les certifications"
   ];
 
   const solutions = [
-    "Site web élégant reflétant l'identité du restaurant",
-    "Plateforme de commande intégrée avec paiement sécurisé",
-    "Galerie visuelle immersive et menu interactif",
-    "API d'intégration avec les services de livraison",
-    "SEO local optimisé pour la visibilité géographique"
+    "Site web premium reflétant la qualité du produit",
+    "Plateforme e-commerce adaptée B2B/B2C avec catalogues",
+    "Galerie de produits avec traçabilité et certifications",
+    "Interface multilingue (français, anglais, arabe)",
+    "SEO international et optimisation pour l'export"
   ];
 
   const results = [
-    { metric: "Commandes en ligne", value: "+250%", icon: <ShoppingCart className="h-6 w-6" /> },
-    { metric: "Réservations", value: "+180%", icon: <Clock className="h-6 w-6" /> },
-    { metric: "Visibilité locale", value: "+300%", icon: <MapPin className="h-6 w-6" /> },
-    { metric: "Satisfaction client", value: "4.8/5", icon: <Star className="h-6 w-6" /> }
+    { metric: "Ventes export", value: "+320%", icon: <ShoppingCart className="h-6 w-6" /> },
+    { metric: "Nouveaux marchés", value: "12 pays", icon: <MapPin className="h-6 w-6" /> },
+    { metric: "Commandes B2B", value: "+185%", icon: <Clock className="h-6 w-6" /> },
+    { metric: "Certification bio", value: "100%", icon: <Star className="h-6 w-6" /> }
   ];
 
   const features = [
     {
-      title: "Menu interactif",
-      description: "Présentation visuelle des plats avec descriptions détaillées et prix",
+      title: "Catalogue produits",
+      description: "Présentation premium des huiles d'olive avec origine et caractéristiques",
       icon: <Utensils className="h-8 w-8" />
     },
     {
-      title: "Commande en ligne",
-      description: "Système de commande intuitif avec options de livraison et à emporter",
+      title: "E-commerce B2B/B2C",
+      description: "Plateforme de vente adaptée aux professionnels et particuliers",
       icon: <ShoppingCart className="h-8 w-8" />
     },
     {
-      title: "Réservations",
-      description: "Système de réservation de tables en temps réel avec confirmation automatique",
-      icon: <Clock className="h-8 w-8" />
+      title: "Traçabilité",
+      description: "Suivi complet de l'origine des olives jusqu'au produit fini",
+      icon: <MapPin className="h-8 w-8" />
     },
     {
-      title: "Galerie culinaire",
-      description: "Showcase visuel des plats et de l'ambiance du restaurant",
+      title: "Certifications",
+      description: "Mise en avant des labels bio et certifications qualité",
       icon: <Star className="h-8 w-8" />
     }
   ];
@@ -69,10 +69,10 @@ export default function GoldenSpoon() {
   ];
 
   const businessImpact = [
-    { label: "Augmentation du CA", value: "+180%" },
-    { label: "Nouveaux clients/mois", value: "450+" },
-    { label: "Commandes moyennes", value: "€35" },
-    { label: "Taux de fidélisation", value: "68%" }
+    { label: "Croissance export", value: "+285%" },
+    { label: "Nouveaux distributeurs", value: "85+" },
+    { label: "Commande moyenne B2B", value: "€1,200" },
+    { label: "Marchés internationaux", value: "12 pays" }
   ];
 
   return (
@@ -84,13 +84,13 @@ export default function GoldenSpoon() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <Badge variant="outline" className="mb-4 bg-white/50 dark:bg-black/50">
-              Site Web Restaurant
+              E-commerce Agricole
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              Golden Spoon - Site Web Gastronomique
+              Golden Spoon - Huile d'Olive Premium
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-              Développement d'un site web élégant pour un restaurant gastronomique avec système de commande en ligne et réservations
+              Développement d'une plateforme e-commerce pour producteur d'huile d'olive tunisienne avec expansion internationale
             </p>
           </div>
         </div>
@@ -102,12 +102,12 @@ export default function GoldenSpoon() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-                Une expérience culinaire digitale
+                Excellence agricole tunisienne à l'international
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                Golden Spoon, restaurant gastronomique reconnu à Tunis, souhaitait moderniser sa présence en ligne 
-                pour attirer une nouvelle clientèle et faciliter les commandes. Nous avons créé un site web qui 
-                capture l'élégance et la qualité de leur cuisine tout en offrant une expérience utilisateur exceptionnelle.
+                Golden Spoon, producteur d'huile d'olive extra vierge basé à Sfax, souhaitait développer ses 
+                exportations internationales. Nous avons créé une plateforme e-commerce premium qui met en valeur 
+                la qualité exceptionnelle de leurs produits et facilite les ventes B2B et B2C à l'international.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white/60 dark:bg-black/40 backdrop-blur-sm rounded-lg p-4">
@@ -340,17 +340,17 @@ export default function GoldenSpoon() {
           <Card className="bg-white/60 dark:bg-black/40 backdrop-blur-sm border-0 shadow-lg">
             <CardContent className="p-8">
               <blockquote className="text-xl text-gray-700 dark:text-gray-300 mb-6 italic text-center">
-                "Notre site web développé par Catalina Home a complètement transformé notre activité. 
-                Les commandes en ligne ont explosé et nos clients apprécient la facilité de réservation. 
-                Le design capture parfaitement l'élégance de notre restaurant."
+                "La plateforme développée par Catalina Home a révolutionné notre approche commerciale. 
+                Nous exportons maintenant vers 12 pays et nos ventes B2B ont augmenté de 185%. 
+                Le site met parfaitement en valeur la qualité premium de nos huiles d'olive."
               </blockquote>
               <div className="flex items-center justify-center space-x-4">
                 <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold">
-                  R.H
+                  M.B
                 </div>
                 <div className="text-center">
-                  <div className="font-semibold text-gray-900 dark:text-white">Rami Hajji</div>
-                  <div className="text-gray-600 dark:text-gray-300">Propriétaire - Golden Spoon Restaurant</div>
+                  <div className="font-semibold text-gray-900 dark:text-white">Mohamed Brahmi</div>
+                  <div className="text-gray-600 dark:text-gray-300">Directeur Export - Golden Spoon Olive Oil</div>
                 </div>
               </div>
             </CardContent>
