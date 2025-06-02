@@ -92,6 +92,15 @@ export default function GoldenSpoon() {
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
               Développement d'une plateforme e-commerce pour producteur d'huile d'olive tunisienne avec expansion internationale
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://goldenspoon-oliveoil.com/" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-gradient-to-r from-green-600 to-yellow-600 hover:from-green-700 hover:to-yellow-700">
+                  <i className="fas fa-globe mr-2"></i>
+                  Visiter le site web
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -362,23 +371,24 @@ export default function GoldenSpoon() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-blue-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Votre restaurant mérite une présence digitale d'exception
+            Votre entreprise mérite une présence digitale d'exception
           </h2>
           <p className="text-xl text-purple-100 mb-8">
-            Développons ensemble le site web qui fera rayonner votre établissement en ligne
+            Développons ensemble la plateforme e-commerce qui propulsera vos ventes à l'international
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/quote">
               <Button size="lg" variant="secondary" className="bg-white text-purple-600 hover:bg-gray-100">
-                Créer mon site restaurant
+                Créer ma plateforme e-commerce
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/contact">
+            <a href="https://goldenspoon-oliveoil.com/" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Discuter du projet
+                <i className="fas fa-globe mr-2"></i>
+                Visiter Golden Spoon
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
