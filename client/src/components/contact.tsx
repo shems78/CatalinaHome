@@ -192,7 +192,7 @@ export function Contact() {
           </form>
 
           {/* Contact Info */}
-          <div className="mt-12 grid md:grid-cols-2 gap-8">
+          <div className="mt-12 grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-envelope text-white text-xl"></i>
@@ -209,6 +209,18 @@ export function Contact() {
                 Téléphone / Phone
               </h4>
               <p className="text-slate-400">+216 23 552 210</p>
+              <p className="text-slate-400">+216 22 135 511</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="fas fa-map-marker-alt text-white text-xl"></i>
+              </div>
+              <h4 className="font-bold text-white mb-2">
+                Adresse / Address
+              </h4>
+              <p className="text-slate-400">Appt 3, Route Lafrane Km4</p>
+              <p className="text-slate-400">Sfax, Tunisie</p>
             </div>
           </div>
         </div>
