@@ -47,14 +47,14 @@ export function Projects() {
       result: '75K+ utilisateurs actifs'
     },
     {
-      icon: 'fas fa-utensils',
-      title: 'Golden Spoon - Site Restaurant',
-      description: 'Site web gastronomique avec commande en ligne et système de réservation',
+      icon: 'fas fa-leaf',
+      title: 'Golden Spoon - Huile d\'Olive',
+      description: 'Plateforme e-commerce B2B/B2C pour producteur d\'huile d\'olive avec export international',
       gradient: 'from-amber-400 to-orange-400',
       tags: ['Vue.js', 'Nuxt.js', 'Stripe'],
       link: '/projects/golden-spoon',
-      client: 'Golden Spoon Restaurant',
-      result: '+250% commandes en ligne'
+      client: 'Golden Spoon Olive Oil',
+      result: '+320% ventes export'
     },
   ];
 
