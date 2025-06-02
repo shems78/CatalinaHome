@@ -1,25 +1,25 @@
 import { useLanguage } from '@/hooks/use-language';
 
 export function About() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const values = [
     {
       icon: 'fas fa-lightbulb',
       title: 'Innovation',
-      description: t.language === 'fr' ? 'Technologies de pointe' : 'Cutting-edge technologies',
+      description: language === 'fr' ? 'Technologies de pointe' : 'Cutting-edge technologies',
       gradient: 'from-blue-500 to-purple-500',
     },
     {
       icon: 'fas fa-shield-alt',
-      title: t.language === 'fr' ? 'Fiabilité' : 'Reliability',
-      description: t.language === 'fr' ? 'Solutions robustes' : 'Robust solutions',
+      title: language === 'fr' ? 'Fiabilité' : 'Reliability',
+      description: language === 'fr' ? 'Solutions robustes' : 'Robust solutions',
       gradient: 'from-green-500 to-teal-500',
     },
     {
       icon: 'fas fa-handshake',
-      title: t.language === 'fr' ? 'Proximité' : 'Proximity',
-      description: t.language === 'fr' ? 'Accompagnement personnalisé' : 'Personalized support',
+      title: language === 'fr' ? 'Proximité' : 'Proximity',
+      description: language === 'fr' ? 'Accompagnement personnalisé' : 'Personalized support',
       gradient: 'from-pink-500 to-rose-500',
     },
   ];
