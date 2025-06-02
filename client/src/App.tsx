@@ -15,6 +15,7 @@ import ERPSystem from "@/pages/projects/erp-system";
 import ShowcaseWebsite from "@/pages/projects/showcase-website";
 import ShemsPlayer from "@/pages/projects/shems-player";
 import CapPlayer from "@/pages/projects/cap-player";
+import GoldenSpoon from "@/pages/projects/golden-spoon";
 
 function Router() {
   return (
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/projects/showcase-website" component={ShowcaseWebsite} />
       <Route path="/projects/shems-player" component={ShemsPlayer} />
       <Route path="/projects/cap-player" component={CapPlayer} />
+      <Route path="/projects/golden-spoon" component={GoldenSpoon} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -46,6 +46,16 @@ export function Projects() {
       client: 'Cap Entertainment',
       result: '75K+ utilisateurs actifs'
     },
+    {
+      icon: 'fas fa-utensils',
+      title: 'Golden Spoon - Site Restaurant',
+      description: 'Site web gastronomique avec commande en ligne et système de réservation',
+      gradient: 'from-amber-400 to-orange-400',
+      tags: ['Vue.js', 'Nuxt.js', 'Stripe'],
+      link: '/projects/golden-spoon',
+      client: 'Golden Spoon Restaurant',
+      result: '+250% commandes en ligne'
+    },
   ];
 
   return (
@@ -55,7 +65,7 @@ export function Projects() {
           {t.projects.title}
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <Link key={index} href={project.link}>
               <div className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 card-hover hover:bg-slate-800/70 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer">
