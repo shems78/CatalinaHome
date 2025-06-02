@@ -54,6 +54,14 @@ export interface Translations {
     title: string;
     whoWeAre: string;
     description: string;
+    mission: string;
+    missionText: string;
+    experience: string;
+    experienceText: string;
+    location: string;
+    locationText: string;
+    expertise: string;
+    expertiseText: string;
     values: string;
     valuesText: string;
   };
@@ -244,8 +252,16 @@ export const translations: Record<Language, Translations> = {
     about: {
       title: 'À propos de nous',
       whoWeAre: 'Qui sommes-nous ?',
-      description: 'Une équipe passionnée d\'experts IT en Tunisie. Nous aidons les entreprises à grandir grâce à des solutions technologiques performantes.',
-      values: 'Nos valeurs :',
+      description: 'Catalina Home est une entreprise tunisienne spécialisée dans le développement de solutions informatiques innovantes. Basée à Sfax, nous accompagnons nos clients depuis 2020 dans leur transformation digitale avec une expertise reconnue en développement mobile, web et applications métier.',
+      mission: 'Notre Mission',
+      missionText: 'Démocratiser l\'accès aux technologies de pointe pour les entreprises tunisiennes et internationales. Nous créons des solutions sur mesure qui répondent aux défis spécifiques de chaque secteur, en alliant innovation technologique et compréhension approfondie des enjeux business.',
+      experience: 'Notre Expérience',
+      experienceText: 'Avec plus de 4 années d\'expérience, notre équipe a livré plus de 50 projets réussis, des applications mobiles téléchargées par des dizaines de milliers d\'utilisateurs aux plateformes e-commerce qui génèrent des millions de dinars de chiffre d\'affaires. Nos clients nous font confiance pour des projets allant de 5 000€ à 100 000€.',
+      location: 'Notre Localisation',
+      locationText: 'Stratégiquement située à Sfax, deuxième ville économique de Tunisie, Catalina Home bénéficie d\'un écosystème technologique dynamique et d\'une position géographique privilégiée pour servir les marchés du Maghreb, d\'Europe et du Moyen-Orient.',
+      expertise: 'Notre Expertise Technique',
+      expertiseText: 'Nos développeurs maîtrisent les technologies les plus demandées : React/React Native, Node.js, Python, Java/Kotlin, PostgreSQL, AWS, et bien d\'autres. Nous appliquons les méthodologies Agile et DevOps pour garantir des livraisons de qualité dans les délais convenus.',
+      values: 'Nos Valeurs',
       valuesText: 'Innovation – Fiabilité – Proximité',
     },
     contact: {
@@ -481,8 +497,16 @@ export const translations: Record<Language, Translations> = {
     about: {
       title: 'About Us',
       whoWeAre: 'Who are we?',
-      description: 'A passionate team of IT experts in Tunisia. We help businesses grow through high-performance technological solutions.',
-      values: 'Our values:',
+      description: 'Catalina Home is a Tunisian company specializing in innovative IT solutions development. Based in Sfax, we have been supporting our clients since 2020 in their digital transformation with recognized expertise in mobile, web, and business application development.',
+      mission: 'Our Mission',
+      missionText: 'To democratize access to cutting-edge technologies for Tunisian and international businesses. We create tailor-made solutions that address specific challenges of each sector, combining technological innovation with deep understanding of business issues.',
+      experience: 'Our Experience',
+      experienceText: 'With over 4 years of experience, our team has delivered more than 50 successful projects, from mobile applications downloaded by tens of thousands of users to e-commerce platforms generating millions of dinars in revenue. Our clients trust us for projects ranging from €5,000 to €100,000.',
+      location: 'Our Location',
+      locationText: 'Strategically located in Sfax, Tunisia\'s second economic city, Catalina Home benefits from a dynamic technological ecosystem and a privileged geographical position to serve the Maghreb, European, and Middle Eastern markets.',
+      expertise: 'Our Technical Expertise',
+      expertiseText: 'Our developers master the most in-demand technologies: React/React Native, Node.js, Python, Java/Kotlin, PostgreSQL, AWS, and many others. We apply Agile and DevOps methodologies to guarantee quality deliveries within agreed deadlines.',
+      values: 'Our Values',
       valuesText: 'Innovation – Reliability – Proximity',
     },
     contact: {
