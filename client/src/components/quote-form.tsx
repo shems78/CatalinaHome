@@ -107,31 +107,47 @@ export function QuoteForm() {
     setIsSubmitting(true);
     
     try {
-      await fetch('/api/quote', {
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/movdgono', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          projectType: formData.projectType,
+          budget: formData.budget,
+          timeline: formData.timeline,
+          description: formData.description,
+          features: formData.features.join(', '),
+          formType: 'quote'
+        }),
       });
-      
-      toast({
-        title: t.quote.success,
-        description: '',
-      });
-      
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        projectType: '',
-        budget: '',
-        timeline: '',
-        description: '',
-        features: [],
-      });
-      setErrors({ name: '', email: '', projectType: '', description: '' });
+
+      if (response.ok) {
+        toast({
+          title: t.quote.success,
+          description: '',
+        });
+        
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          projectType: '',
+          budget: '',
+          timeline: '',
+          description: '',
+          features: [],
+        });
+        setErrors({ name: '', email: '', projectType: '', description: '' });
+      } else {
+        throw new Error('Form submission failed');
+      }
       
     } catch (error) {
       toast({
